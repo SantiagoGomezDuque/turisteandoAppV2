@@ -1,8 +1,16 @@
 <resources>
     <string name="app_name">Turisteando_V2</string>
     <string name="resenahoteles">
-        Considerando que la libertad, la justicia y la paz en el mundo tienen por base el reconocimiento de la dignidad intrinseca y de los derechos iguales e inalienables de todos los miembros de la familia humana;
-
-        Considerando que el desconocimiento y el menosprecio de los derechos humanos han originado actos de barbarie ultrajantes para la conciencia de la humanidad, y que se ha proclamado, como la aspiracion mas elevada del hombre, el advenimiento de un mundo en que los seres humanos, liberados del temor y de la miseria, disfruten de la libertad de palabra y de la libertad de creencias;
+     En nuestros hoteles podras disfrutar de todas las comodidades y la alimentacion que desees desde 120.000 COP en adelante
     </string>
+    <string name="resenarestaurantes">
+        Encuentra deliciosa comida tipica como los mariscos desde 30.000 COP en adelante
+    </string>
+    <string name="resenasitios">
+        Encuentra divertidas atracciones turisticas y recorridos guiados por profesionales desde 50.000 COP en adelante
+    </string>
+    <string name="opcion1">Ingles</string>
+    <string name="opcion2">Español</string>
+    <string name="opcion3">Italiano</string>
+    <string name="opcion4">Acerca De</string>
 </resources>
