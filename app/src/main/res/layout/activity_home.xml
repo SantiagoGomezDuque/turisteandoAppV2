@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Home"
-    android:background="@color/yellowgreen">
+    android:background="@color/aquamarine">
     <ImageView
         android:id="@+id/logo"
         android:src="@drawable/desfiladero"
@@ -44,7 +44,7 @@
 
     <Button
         android:id="@+id/botonrestaurantes"
-        android:backgroundTint="@color/steelblue"
+        android:backgroundTint="@color/black"
         android:text="RESTAURANTES"
         android:layout_marginHorizontal="30dp"
         android:layout_width="match_parent"
@@ -57,7 +57,7 @@
 
     <Button
         android:id="@+id/botonsitios"
-        android:backgroundTint="@color/steelblue"
+        android:backgroundTint="@color/black"
         android:text="SITIOS TURISTICOS"
         android:layout_marginHorizontal="30dp"
         android:layout_width="match_parent"
