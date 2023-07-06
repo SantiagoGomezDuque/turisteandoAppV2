@@ -2,6 +2,7 @@ package com.example.turisteando_v2;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -29,28 +30,34 @@ public class Home extends AppCompatActivity {
         botonHoteles.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(Home.this, "Hice Clic", Toast.LENGTH_SHORT).show();
+                Intent intenthoteles=new Intent(Home.this,HotelesHome.class);
+                startActivity(intenthoteles);
             }
         });
         BotonRestaurantes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(Home.this, "Hice Clic 2", Toast.LENGTH_SHORT).show();
+                Intent intentrestaurantes=new Intent(Home.this,RestaurantesHome.class);
+                startActivity(intentrestaurantes);
             }
         });
         BotonTurismo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(Home.this, "Hice Clic 3", Toast.LENGTH_SHORT).show();
+                Intent intentsitios=new Intent(Home.this,TurismoHome.class);
+                startActivity(intentsitios);
             }
         });
     }
-    public boolean onCreateOptionMenu(Menu menu){
+
+
+    public boolean onCreateOptionsMenu(Menu menu){
         getMenuInflater().inflate(R.menu.menu,menu);
         return true;
     }
-    public boolean onOptionItemSelected(MenuItem item){
-        int itemSeleccionado= item.getItemId();
+
+    public boolean onOptionsItemSelected(MenuItem item){
+        int itemSeleccionado=item.getItemId();
         switch (itemSeleccionado){
 
             case(R.id.opcion1):
@@ -65,5 +72,9 @@ public class Home extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void cambiarIdioma(String idioma){
+
     }
 }
