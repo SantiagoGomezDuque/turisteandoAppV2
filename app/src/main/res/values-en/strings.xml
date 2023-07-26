@@ -14,4 +14,8 @@
     <string name="opcion2">Spanish</string>
     <string name="opcion3">Italian</string>
     <string name="opcion4">About</string>
+    <string name="contraseña">enter your password</string>
+    <string name="usuario">enter your username</string>
+    <string name="INGRESO">Enter</string>
+    <string name="resenaSanti">I am Santiago, a 17-year-old boy, I like to sing, play instruments, develop web pages and program apps</string>
 </resources>
