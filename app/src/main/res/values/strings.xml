@@ -13,8 +13,13 @@
     <string name="opcion2">Español</string>
     <string name="opcion3">Italiano</string>
     <string name="opcion4">Acerca De</string>
+
     <string name="contraseña">digita tu contraseña</string>
     <string name="usuario">digita tu usuario</string>
     <string name="INGRESO">Ingresar</string>
+    <string name="Contacto">Contacto</string>
+    <string name="Teléfono">Teléfono</string>
+    <string name="Nombre">Nombre</string>
     <string name="resenaSanti">Soy Santiago, un chico de 17 años, me gusta cantar, tocar instrumentos, desarrollar páginas web y programar apps</string>
+    <string name="platorecomendado">Recomendado</string>
 </resources>

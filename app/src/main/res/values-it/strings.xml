@@ -17,5 +17,9 @@
     <string name="contraseña">Inserisci la tua password</string>
     <string name="usuario">Inserisci il tuo nome utente</string>
     <string name="INGRESO">Inserisci</string>
+    <string name="Contacto">contatto</string>
+    <string name="Nombre">Nome</string>
+    <string name="Teléfono">telefono</string>
     <string name="resenaSanti">Sono Santiago, un ragazzo di 17 anni, mi piace cantare, suonare strumenti, sviluppare pagine web e programmare app</string>
+    <string name="platorecomendado">Consigliato</string>
 </resources>

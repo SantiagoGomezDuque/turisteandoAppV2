@@ -17,5 +17,9 @@
     <string name="contraseña">enter your password</string>
     <string name="usuario">enter your username</string>
     <string name="INGRESO">Enter</string>
+    <string name="Contacto">Contact</string>
+    <string name="Nombre">Name</string>
+    <string name="Teléfono">Phone</string>
     <string name="resenaSanti">I am Santiago, a 17-year-old boy, I like to sing, play instruments, develop web pages and program apps</string>
+    <string name="platorecomendado">Recommended</string>
 </resources>
