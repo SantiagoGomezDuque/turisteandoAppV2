@@ -3,20 +3,20 @@ package com.example.turisteando_v2.moldes;
 public class MoldeRestaurantes {
 
     private String nombre;
-    private String foto;
+    private String precio;
     private String telefono;
-    private String RangoPrecio;
-    private String PlatoRecomendado;
+    private String plato;
+    private Integer foto;
 
     public MoldeRestaurantes() {
     }
 
-    public MoldeRestaurantes(String nombre, String foto, String telefono, String rangoPrecio, String platoRecomendado) {
+    public MoldeRestaurantes(String nombre, String precio, String telefono, String plato, Integer foto) {
         this.nombre = nombre;
-        this.foto = foto;
+        this.precio = precio;
         this.telefono = telefono;
-        RangoPrecio = rangoPrecio;
-        PlatoRecomendado = platoRecomendado;
+        this.plato = plato;
+        this.foto = foto;
     }
 
     public String getNombre() {
@@ -27,12 +27,12 @@ public class MoldeRestaurantes {
         this.nombre = nombre;
     }
 
-    public String getFoto() {
-        return foto;
+    public String getPrecio() {
+        return precio;
     }
 
-    public void setFoto(String foto) {
-        this.foto = foto;
+    public void setPrecio(String precio) {
+        this.precio = precio;
     }
 
     public String getTelefono() {
@@ -43,19 +43,20 @@ public class MoldeRestaurantes {
         this.telefono = telefono;
     }
 
-    public String getRangoPrecio() {
-        return RangoPrecio;
+    public String getPlato() {
+        return plato;
     }
 
-    public void setRangoPrecio(String rangoPrecio) {
-        RangoPrecio = rangoPrecio;
+    public void setPlato(String plato) {
+        this.plato = plato;
     }
 
-    public String getPlatoRecomendado() {
-        return PlatoRecomendado;
+    public Integer getFoto() {
+        return foto;
     }
 
-    public void setPlatoRecomendado(String platoRecomendado) {
-        PlatoRecomendado = platoRecomendado;
+
+    public void setFoto(Integer foto) {
+        this.foto = foto;
     }
 }
