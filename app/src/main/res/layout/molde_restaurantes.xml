@@ -36,15 +36,14 @@
         android:id="@+id/precio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/restaurante"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintVertical_bias="0.04"
-        app:layout_constraintHorizontal_bias="0.1"
         android:text="Desde 50.000 COP en adelante"
         android:textSize="20dp"
-        />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/restaurante"
+        app:layout_constraintVertical_bias="0.023" />
 
     <TextView
         android:id="@+id/telefonorestaurante"
@@ -85,7 +84,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintVertical_bias="0.0"
         app:layout_constraintHorizontal_bias="0.1"
-        android:text="Bandeja Paisa"
         android:textStyle="bold"
         android:textSize="20dp"
         />

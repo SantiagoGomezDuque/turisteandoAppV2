@@ -57,10 +57,10 @@ public class AdaptadorSitios extends RecyclerView.Adapter<AdaptadorSitios.viewHo
         TextView contactoSitio;
         public viewHolder(@NonNull View itemView) {
             super(itemView);
-            fotoSitio=itemView.findViewById(R.id.fotoListaSitio);
-            nombreSitio=itemView.findViewById(R.id.nombreListaSitio);
-            precioSitio=itemView.findViewById(R.id.precioListaSitio);
-            contactoSitio=itemView.findViewById(R.id.contactoListaSitio);
+            fotoSitio=itemView.findViewById(R.id.Comuna);
+            nombreSitio=itemView.findViewById(R.id.NombreSitioTuristico);
+            precioSitio=itemView.findViewById(R.id.contactositios);
+            contactoSitio=itemView.findViewById(R.id.telefonositios);
         }
 
         public void actualizarDatos(MoldeTurismo moldeTurismo) {

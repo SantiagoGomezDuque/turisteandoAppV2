@@ -6,9 +6,9 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 
-import com.example.turisteando_v2.adaptadores.AdaptadorRestaurantes;
 import com.example.turisteando_v2.adaptadores.AdaptadorSitios;
-import com.example.turisteando_v2.moldes.MoldeRestaurantes;
+import com.example.turisteando_v2.adaptadores.AdaptadorSitios;
+import com.example.turisteando_v2.moldes.MoldeTurismo;
 import com.example.turisteando_v2.moldes.MoldeTurismo;
 
 import java.util.ArrayList;

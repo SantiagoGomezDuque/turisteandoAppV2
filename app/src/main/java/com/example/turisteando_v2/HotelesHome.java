@@ -10,16 +10,16 @@ import android.widget.TextView;
 
 public class HotelesHome extends AppCompatActivity {
 
-    Button botonsitios;
+    Button botonHotel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hoteles_home);
 
-        botonsitios=findViewById(R.id.botonsitios);
+        botonHotel=findViewById(R.id.botonHotel);
 
-        botonsitios.setOnClickListener(new View.OnClickListener() {
+        botonHotel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(HotelesHome.this,ListaHoteles.class);
