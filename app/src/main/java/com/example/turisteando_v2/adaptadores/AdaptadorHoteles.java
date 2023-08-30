@@ -1,5 +1,6 @@
 package com.example.turisteando_v2.adaptadores;
 
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,6 +10,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.turisteando_v2.AmpliandoHotel;
 import com.example.turisteando_v2.ListaHoteles;
 import com.example.turisteando_v2.R;
 import com.example.turisteando_v2.moldes.MoldeHotel;
@@ -34,7 +36,7 @@ public class AdaptadorHoteles extends RecyclerView.Adapter<AdaptadorHoteles.view
     @Override
     public AdaptadorHoteles.viewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         //esta porcion de codigo permite crear N copias del molde grafico
-        View vista= LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_molde_hotel, null, false);
+        View vista = LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_molde_hotel, null, false);
         return new viewHolder(vista);
     }
 
@@ -54,12 +56,13 @@ public class AdaptadorHoteles extends RecyclerView.Adapter<AdaptadorHoteles.view
         TextView nombreHotel;
         TextView precioHotel;
         TextView contactoHotel;
+
         public viewHolder(@NonNull View itemView) {
             super(itemView);
-            fotoHotel=itemView.findViewById(R.id.fotoListaHotel);
-            nombreHotel=itemView.findViewById(R.id.nombreListaHotel);
-            precioHotel=itemView.findViewById(R.id.precioListaHotel);
-            contactoHotel=itemView.findViewById(R.id.contactoListaHotel);
+            fotoHotel = itemView.findViewById(R.id.fotoListaHotel);
+            nombreHotel = itemView.findViewById(R.id.nombreListaHotel);
+            precioHotel = itemView.findViewById(R.id.precioListaHotel);
+            contactoHotel = itemView.findViewById(R.id.contactoListaHotel);
         }
 
         public void actualizarDatos(MoldeHotel moldeHotel) {
@@ -67,6 +70,16 @@ public class AdaptadorHoteles extends RecyclerView.Adapter<AdaptadorHoteles.view
             nombreHotel.setText(moldeHotel.getNombre());
             precioHotel.setText(moldeHotel.getPrecio());
             contactoHotel.setText(moldeHotel.getTelefono());
+
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(itemView.getContext(), AmpliandoHotel.class);
+                    itemView.getContext().startActivity(intent);
+                }
+            });
+
         }
     }
 }
