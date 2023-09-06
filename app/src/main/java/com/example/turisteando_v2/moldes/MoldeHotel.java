@@ -2,7 +2,9 @@ package com.example.turisteando_v2.moldes;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MoldeHotel extends AppCompatActivity {
+import java.io.Serializable;
+
+public class MoldeHotel implements Serializable {
 
     private String nombre;
     private String precio;
