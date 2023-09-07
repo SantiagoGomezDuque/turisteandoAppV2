@@ -7,14 +7,27 @@
     tools:context=".AmpliandoRestaurante">
 
     <ImageView
-        android:id="@+id/fotorestaurante"
-        android:layout_width="match_parent"
-        android:layout_height="400dp"
+        android:id="@+id/fotorestaurantedesc"
+        android:layout_width="206dp"
+        android:layout_height="283dp"
         android:scaleType="fitXY"
         android:src="@drawable/restaurante2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/fotoRestauranteAdicional"
+        android:layout_width="202dp"
+        android:layout_height="284dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/restaurante5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
@@ -29,7 +42,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/fotorestaurante"
+        app:layout_constraintTop_toBottomOf="@id/fotorestaurantedesc"
         app:layout_constraintVertical_bias="0.043" />
 
     <TextView
@@ -46,7 +59,6 @@
         app:layout_constraintHorizontal_bias="0.5"
 
         />
-
     <TextView
         android:id="@+id/contactoRestaurante"
         android:layout_width="wrap_content"
@@ -55,22 +67,38 @@
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="2.4"
+        app:layout_constraintHorizontal_bias="2.8"
         app:layout_constraintStart_toEndOf="@id/precioRestaurante"
         app:layout_constraintTop_toBottomOf="@id/nombreRestaurante"
         app:layout_constraintVertical_bias="0.2" />
 
 
     <TextView
-        android:id="@+id/telefonoRestaurante"
+        android:id="@+id/telefonoRestaurantedesc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="@string/Contacto"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintVertical_bias="0.050"
-        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintVertical_bias="0.2"
+        app:layout_constraintHorizontal_bias="2.8"
+        app:layout_constraintStart_toEndOf="@id/precioRestaurante"
+        app:layout_constraintTop_toBottomOf="@id/nombreRestaurante"
         />
+
+    <TextView
+        android:id="@+id/descripcionRestaurante"
+        android:layout_width="375dp"
+        android:layout_height="94dp"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget pulvinar enim."
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.91"
+        app:layout_constraintStart_toEndOf="@id/contactoRestaurante"
+        app:layout_constraintTop_toBottomOf="@id/telefonoRestaurantedesc"
+        app:layout_constraintVertical_bias="0.099" />
 
     <Button
         android:id="@+id/botonreservar"

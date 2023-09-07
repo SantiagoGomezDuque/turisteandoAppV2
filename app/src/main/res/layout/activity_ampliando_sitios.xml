@@ -7,9 +7,9 @@
     tools:context=".AmpliandoSitios">
 
     <ImageView
-        android:id="@+id/fotoSitio"
-        android:layout_width="match_parent"
-        android:layout_height="400dp"
+        android:id="@+id/fotoSitiodesc"
+        android:layout_width="215dp"
+        android:layout_height="248dp"
         android:scaleType="fitXY"
         android:src="@drawable/comuna"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -19,8 +19,22 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
+    <ImageView
+        android:id="@+id/fotoadicional"
+        android:layout_width="196dp"
+        android:layout_height="246dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/lugar3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
     <TextView
-        android:id="@+id/nombreSitio"
+        android:id="@+id/nombreSitiodesc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Comuna 13"
@@ -29,11 +43,11 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/fotoSitio"
+        app:layout_constraintTop_toBottomOf="@id/fotoSitiodesc"
         app:layout_constraintVertical_bias="0.043" />
 
     <TextView
-        android:id="@+id/precioHotel"
+        android:id="@+id/precioSitio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="$50000 COP"
@@ -41,7 +55,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/nombreSitio"
+        app:layout_constraintTop_toBottomOf="@id/nombreSitiodesc"
         app:layout_constraintVertical_bias="0.05"
         app:layout_constraintHorizontal_bias="0.5"
 
@@ -55,9 +69,9 @@
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="2.4"
-        app:layout_constraintStart_toEndOf="@id/precioHotel"
-        app:layout_constraintTop_toBottomOf="@id/nombreSitio"
+        app:layout_constraintHorizontal_bias="2.8"
+        app:layout_constraintStart_toEndOf="@id/precioSitio"
+        app:layout_constraintTop_toBottomOf="@id/nombreSitiodesc"
         app:layout_constraintVertical_bias="0.2" />
 
 
@@ -65,12 +79,28 @@
         android:id="@+id/telefonoSitio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="@string/Contacto"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintVertical_bias="0.050"
-        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintVertical_bias="0.2"
+        app:layout_constraintHorizontal_bias="2.8"
+        app:layout_constraintStart_toEndOf="@id/precioSitio"
+        app:layout_constraintTop_toBottomOf="@id/nombreSitiodesc"
         />
+
+    <TextView
+        android:id="@+id/descripcionSitio"
+        android:layout_width="375dp"
+        android:layout_height="94dp"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget pulvinar enim."
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.91"
+        app:layout_constraintStart_toEndOf="@id/contactoSitio"
+        app:layout_constraintTop_toBottomOf="@id/telefonoSitio"
+        app:layout_constraintVertical_bias="0.099" />
 
     <Button
         android:id="@+id/botonreservar"

@@ -8,14 +8,27 @@
 
 
     <ImageView
-        android:id="@+id/fotohotel"
-        android:layout_width="match_parent"
-        android:layout_height="400dp"
+        android:id="@+id/fotohoteldesc"
+        android:layout_width="212dp"
+        android:layout_height="267dp"
         android:scaleType="fitXY"
         android:src="@drawable/hotel1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/fotoadicional"
+        android:layout_width="198dp"
+        android:layout_height="270dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/hotel3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
@@ -30,7 +43,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/fotohotel"
+        app:layout_constraintTop_toBottomOf="@id/fotohoteldesc"
         app:layout_constraintVertical_bias="0.043" />
 
     <TextView
@@ -49,14 +62,14 @@
         />
 
     <TextView
-        android:id="@+id/contactoListaHotel"
+        android:id="@+id/contactoHotel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Contacto: 3225322222"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="2.4"
+        app:layout_constraintHorizontal_bias="2.9"
         app:layout_constraintStart_toEndOf="@id/precioHotel"
         app:layout_constraintTop_toBottomOf="@id/nombreHotel"
         app:layout_constraintVertical_bias="0.2" />
@@ -66,19 +79,35 @@
         android:id="@+id/telefonoHotel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="@string/Contacto"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintVertical_bias="0.050"
-        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintVertical_bias="0.2"
+        app:layout_constraintHorizontal_bias="2.8"
+        app:layout_constraintStart_toEndOf="@id/precioHotel"
+        app:layout_constraintTop_toBottomOf="@id/nombreHotel"
         />
+
+    <TextView
+        android:id="@+id/descripcionHotel"
+        android:layout_width="375dp"
+        android:layout_height="94dp"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget pulvinar enim."
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.91"
+        app:layout_constraintStart_toEndOf="@id/contactoHotel"
+        app:layout_constraintTop_toBottomOf="@id/telefonoHotel"
+        app:layout_constraintVertical_bias="0.099" />
 
     <Button
         android:id="@+id/botonreservar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="30dp"
-        android:layout_marginBottom="120dp"
+        android:layout_marginBottom="76dp"
         android:backgroundTint="@color/black"
         android:text="Reservar"
         app:layout_constraintBottom_toBottomOf="parent"
