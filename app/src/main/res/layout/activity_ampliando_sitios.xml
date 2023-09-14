@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AmpliandoSitios">
+    tools:context=".AmpliandoSitios"
+    android:background="@color/lightblue">
 
     <ImageView
         android:id="@+id/fotoSitiodesc"
@@ -20,7 +21,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
-        android:id="@+id/fotoadicional"
+        android:id="@+id/FotoSitioExt"
         android:layout_width="196dp"
         android:layout_height="246dp"
         android:scaleType="fitXY"
@@ -94,13 +95,29 @@
         android:layout_width="375dp"
         android:layout_height="94dp"
         android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget pulvinar enim."
+        android:textAlignment="center"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.91"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@id/contactoSitio"
         app:layout_constraintTop_toBottomOf="@id/telefonoSitio"
-        app:layout_constraintVertical_bias="0.099" />
+        app:layout_constraintVertical_bias="0.092" />
+
+
+    <TextView
+        android:id="@+id/ValoracionTurismo"
+        android:layout_width="375dp"
+        android:layout_height="94dp"
+        android:text="Valoración: 5"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@id/contactoSitio"
+        app:layout_constraintTop_toBottomOf="@id/telefonoSitio"
+        app:layout_constraintVertical_bias="0.425" />
 
     <Button
         android:id="@+id/botonreservar"

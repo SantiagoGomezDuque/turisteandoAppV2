@@ -9,6 +9,8 @@ import android.widget.Toast;
 
 import com.example.turisteando_v2.moldes.MoldeHotel;
 
+import org.w3c.dom.Text;
+
 public class AmpliandoHotel extends AppCompatActivity {
 
     MoldeHotel moldeHotel;
@@ -17,6 +19,8 @@ public class AmpliandoHotel extends AppCompatActivity {
     TextView PrecioAmpliandoHotel;
     TextView ContactoAmpliandoHotel;
     TextView DescripcionHotel;
+    TextView ValoracionHotel;
+    ImageView fotoAdicional;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +32,9 @@ public class AmpliandoHotel extends AppCompatActivity {
         PrecioAmpliandoHotel=findViewById(R.id.precioHotel);
         ContactoAmpliandoHotel=findViewById(R.id.telefonoHotel);
         DescripcionHotel=findViewById(R.id.descripcionHotel);
+        ValoracionHotel=findViewById(R.id.ValoracionHotel);
+        fotoAdicional=findViewById(R.id.FotoHotelExt);
+
         moldeHotel=(MoldeHotel) getIntent().getSerializableExtra("datoshotel");
 
         //Cargando la info en los componentes graficos
@@ -36,6 +43,8 @@ public class AmpliandoHotel extends AppCompatActivity {
         PrecioAmpliandoHotel.setText(moldeHotel.getPrecio());
         ContactoAmpliandoHotel.setText(moldeHotel.getTelefono());
         DescripcionHotel.setText(moldeHotel.getDescripcion());
+        ValoracionHotel.setText(moldeHotel.getValoracionHotel());
+        fotoAdicional.setImageResource(moldeHotel.getFotoadicional());
 
     }
 }

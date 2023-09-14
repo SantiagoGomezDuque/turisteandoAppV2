@@ -58,6 +58,7 @@ public class AdaptadorRestaurantes extends RecyclerView.Adapter<AdaptadorRestaur
         TextView telefonorestaurante;
         TextView platorecomendado;
         ImageView foto;
+
         public viewHolder(@NonNull View itemView) {
             super(itemView);
             nombrerestaurantes=itemView.findViewById(R.id.nombrerestaurantes);

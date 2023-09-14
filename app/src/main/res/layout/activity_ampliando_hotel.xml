@@ -21,7 +21,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
-        android:id="@+id/fotoadicional"
+        android:id="@+id/FotoHotelExt"
         android:layout_width="198dp"
         android:layout_height="270dp"
         android:scaleType="fitXY"
@@ -63,8 +63,8 @@
 
     <TextView
         android:id="@+id/contactoHotel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="212dp"
+        android:layout_height="51dp"
         android:text="Contacto: 3225322222"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -89,18 +89,34 @@
         app:layout_constraintTop_toBottomOf="@id/nombreHotel"
         />
 
+
     <TextView
         android:id="@+id/descripcionHotel"
         android:layout_width="375dp"
         android:layout_height="94dp"
         android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget pulvinar enim."
+        android:textAlignment="center"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.91"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@id/contactoHotel"
         app:layout_constraintTop_toBottomOf="@id/telefonoHotel"
-        app:layout_constraintVertical_bias="0.099" />
+        app:layout_constraintVertical_bias="0.084" />
+
+    <TextView
+        android:id="@+id/ValoracionHotel"
+        android:layout_width="416dp"
+        android:layout_height="95dp"
+        android:text="Valoracion: 5"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@id/contactoHotel"
+        app:layout_constraintTop_toBottomOf="@id/telefonoHotel"
+        app:layout_constraintVertical_bias="0.417" />
 
     <Button
         android:id="@+id/botonreservar"

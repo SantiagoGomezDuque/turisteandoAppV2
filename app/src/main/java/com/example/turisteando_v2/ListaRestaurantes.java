@@ -32,11 +32,11 @@ public class ListaRestaurantes extends AppCompatActivity {
 
     public void llenarListaConDatos(){
 
-        listaRestaurantes.add(new MoldeRestaurantes("El Migao","10000","3123322323","Waffles",R.drawable.restaurante1,"Precio economico",R.drawable.restaurante5));
-        listaRestaurantes.add(new MoldeRestaurantes("Arepepa","15000","3115542333","Arepa Rellena",R.drawable.restaurante2,"Precio economico",R.drawable.restaurante3));
-        listaRestaurantes.add(new MoldeRestaurantes("Restaurante El Sancochado","25000","3186272123","Sancocho de Res",R.drawable.restaurante3,"Precio economico",R.drawable.restaurante4));
-        listaRestaurantes.add(new MoldeRestaurantes("El palacio de los dulces","8000","3106642322","Obleas",R.drawable.restaurante4,"Precio economico",R.drawable.restaurante1));
-        listaRestaurantes.add(new MoldeRestaurantes("La chocolera","10000","3154423231","Arepa de Chocolo",R.drawable.restaurante5,"Precio economico",R.drawable.restaurante2));
+        listaRestaurantes.add(new MoldeRestaurantes("El Migao","10000","3123322323","Waffles",R.drawable.restaurante1,"Precio economico",R.drawable.waffles,"Valoracion: 5"));
+        listaRestaurantes.add(new MoldeRestaurantes("Arepepa","15000","3115542333","Arepa Rellena",R.drawable.restaurante2,"Precio economico",R.drawable.arepa,"Valoracion: 3"));
+        listaRestaurantes.add(new MoldeRestaurantes("Restaurante El Sancochado","25000","3186272123","Sancocho de Res",R.drawable.restaurante3,"Precio economico",R.drawable.sancocho,"Valoracion: 4"));
+        listaRestaurantes.add(new MoldeRestaurantes("El palacio de los dulces","8000","3106642322","Obleas",R.drawable.restaurante4,"Precio economico",R.drawable.fresasconcrema,"Valoracion: 4"));
+        listaRestaurantes.add(new MoldeRestaurantes("La chocolera","10000","3154423231","Arepa de Chocolo",R.drawable.restaurante5,"Precio economico",R.drawable.torta,"Valoracion: 5"));
     }
 }
 

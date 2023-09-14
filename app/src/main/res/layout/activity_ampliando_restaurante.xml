@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AmpliandoRestaurante">
+    tools:context=".AmpliandoRestaurante"
+    android:background="@color/lemonchiffon">
 
     <ImageView
         android:id="@+id/fotorestaurantedesc"
@@ -20,7 +21,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
-        android:id="@+id/fotoRestauranteAdicional"
+        android:id="@+id/FotoRestauranteExt"
         android:layout_width="202dp"
         android:layout_height="284dp"
         android:scaleType="fitXY"
@@ -92,20 +93,36 @@
         android:layout_width="375dp"
         android:layout_height="94dp"
         android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget pulvinar enim."
+        android:textAlignment="center"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.91"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@id/contactoRestaurante"
         app:layout_constraintTop_toBottomOf="@id/telefonoRestaurantedesc"
-        app:layout_constraintVertical_bias="0.099" />
+        app:layout_constraintVertical_bias="0.075" />
+
+
+    <TextView
+        android:id="@+id/ValoracionRestaurante"
+        android:layout_width="416dp"
+        android:layout_height="95dp"
+        android:text="Valoracion: 5"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@id/contactoRestaurante"
+        app:layout_constraintTop_toBottomOf="@id/telefonoRestaurantedesc"
+        app:layout_constraintVertical_bias="0.512" />
 
     <Button
         android:id="@+id/botonreservar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="30dp"
-        android:layout_marginBottom="120dp"
+        android:layout_marginBottom="104dp"
         android:backgroundTint="@color/black"
         android:text="Reservar"
         app:layout_constraintBottom_toBottomOf="parent"

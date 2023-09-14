@@ -32,10 +32,10 @@ public class ListaSitiosTuristicos extends AppCompatActivity {
 
     public void llenarListaConDatos(){
 
-        listaSitios.add(new MoldeTurismo("Museo el Castillo","Sara","3123322323","20000", R.drawable.lugar1,"Sitio lindo",R.drawable.lugar2));
-        listaSitios.add(new MoldeTurismo("Pueblito Paisa","Cristian","3113222223","40000" ,R.drawable.lugar2,"Sitio lindo",R.drawable.lugar1));
-        listaSitios.add(new MoldeTurismo("Comuna 13","Manuela","3185543221","60000", R.drawable.lugar3,"Sitio lindo",R.drawable.lugar5));
-        listaSitios.add(new MoldeTurismo("Cerro de las 3 cruces","Marcos","3153322323","10000", R.drawable.lugar4,"Sitio lindo",R.drawable.lugar3));
-        listaSitios.add(new MoldeTurismo("Casa Barrientos","Samuel","3006689878","50000", R.drawable.lugar5,"Sitio lindo",R.drawable.lugar4));
+        listaSitios.add(new MoldeTurismo("Museo el Castillo","Sara","3123322323","20000", R.drawable.lugar1,"Sitio lindo",R.drawable.castillo,"Valoracion: 5"));
+        listaSitios.add(new MoldeTurismo("Pueblito Paisa","Cristian","3113222223","40000" ,R.drawable.lugar2,"Sitio lindo",R.drawable.pueblito,"Valoracion: 3"));
+        listaSitios.add(new MoldeTurismo("Comuna 13","Manuela","3185543221","60000", R.drawable.lugar3,"Sitio lindo",R.drawable.comuna,"Valoracion: 4"));
+        listaSitios.add(new MoldeTurismo("Cerro de las 3 cruces","Marcos","3153322323","10000", R.drawable.lugar4,"Sitio lindo",R.drawable.cerro,"Valoracion: 5"));
+        listaSitios.add(new MoldeTurismo("Casa Barrientos","Samuel","3006689878","50000", R.drawable.lugar5,"Sitio lindo",R.drawable.barrientos,"Valoracion: 4"));
     }
 }

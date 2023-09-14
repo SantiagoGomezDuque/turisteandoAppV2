@@ -29,10 +29,10 @@ public class ListaHoteles extends AppCompatActivity {
     }
 
     public void llenarListaConDatos(){
-        listaHoteles.add(new MoldeHotel("Hotel El mirador","150000","3225608780",R.drawable.hotel1,"Hotel hermoso y agradable",R.drawable.hotel2));
-        listaHoteles.add(new MoldeHotel("Hotel la Waira","250000","3205618230",R.drawable.hotel2,"hotel sucio y desagradable",R.drawable.hotel1));
-        listaHoteles.add(new MoldeHotel("Hotel El descanso","160000","3155533444",R.drawable.hotel3,"Hotel con excelente atencion al cliente",R.drawable.hotel5));
-        listaHoteles.add(new MoldeHotel("Hotel El Portal","180000","3123344454",R.drawable.hotel4,"Hotel con agua sucia y camas de mala calidad",R.drawable.hotel4));
-        listaHoteles.add(new MoldeHotel("Hotel El Cielo","200000","3113322323",R.drawable.hotel5,"Hotel con las tres comidas del dia",R.drawable.hotel3));
+        listaHoteles.add(new MoldeHotel("Hotel El mirador","150000","3225608780",R.drawable.imagenhotel,"Hotel hermoso y agradable",R.drawable.hotel1,"Valoracion: 5"));
+        listaHoteles.add(new MoldeHotel("Hotel la Waira","250000","3205618230",R.drawable.cabana,"hotel sucio y desagradable",R.drawable.hotel2,"Valoracion: 2"));
+        listaHoteles.add(new MoldeHotel("Hotel El descanso","160000","3155533444",R.drawable.glamping,"Hotel con excelente atencion al cliente",R.drawable.hotel3,"Valoracion: 3"));
+        listaHoteles.add(new MoldeHotel("Hotel El Portal","180000","3123344454",R.drawable.hotelbonito,"Hotel con agua sucia y camas de mala calidad",R.drawable.hotel4,"Valoracion: 5"));
+        listaHoteles.add(new MoldeHotel("Hotel El Cielo","200000","3113322323",R.drawable.hotel5,"Hotel con las tres comidas del dia",R.drawable.motel,"Valoracion: 4"));
     }
 }
