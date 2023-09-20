@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "655561413351",
+    "project_id": "turisteandosgd",
+    "storage_bucket": "turisteandosgd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:655561413351:android:83042c2cce031b2bdfc842",
+        "android_client_info": {
+          "package_name": "com.example.turisteando_v2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXc8_ckx-u61iO3ijE4La5ILsgnffkxsk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
