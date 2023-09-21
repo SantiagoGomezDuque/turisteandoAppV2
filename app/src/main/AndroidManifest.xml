@@ -49,13 +49,6 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".MoldeHotel"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
             android:name=".ListaSitiosTuristicos"
             android:exported="false">
             <meta-data
