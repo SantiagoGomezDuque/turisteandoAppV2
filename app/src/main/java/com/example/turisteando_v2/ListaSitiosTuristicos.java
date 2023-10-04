@@ -44,6 +44,7 @@ public class ListaSitiosTuristicos extends AppCompatActivity {
                                 String nombreSitio=document.getString("nombre");
                                 String precioSitio=document.getString("precio");
                                 Toast.makeText(ListaSitiosTuristicos.this, nombreSitio, Toast.LENGTH_SHORT).show();
+                                Toast.makeText(ListaSitiosTuristicos.this, precioSitio, Toast.LENGTH_SHORT).show();
 
                             }
                         } else {

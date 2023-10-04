@@ -24,6 +24,7 @@ public class ListaRestaurantes extends AppCompatActivity {
 
     ArrayList<MoldeRestaurantes> listaRestaurantes = new ArrayList<>();
     RecyclerView recyclerView;
+
     FirebaseFirestore db = FirebaseFirestore.getInstance();
 
     @Override
@@ -33,7 +34,7 @@ public class ListaRestaurantes extends AppCompatActivity {
         recyclerView=findViewById(R.id.listadinamicarestaurantes);
         recyclerView.setLayoutManager(new LinearLayoutManager(this,RecyclerView.VERTICAL,false));
 
-        db.collection("hoteles")
+        db.collection("restaurantes")
                 .get()
                 .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                     @Override
@@ -41,9 +42,10 @@ public class ListaRestaurantes extends AppCompatActivity {
                         if (task.isSuccessful()) {
                             for (QueryDocumentSnapshot document : task.getResult()) {
 
-                                String nombreeRstaurante=document.getString("nombre");
+                                String nombreRestaurante=document.getString("nombre");
                                 String precioRestaurante=document.getString("precio");
-                                Toast.makeText(ListaRestaurantes.this, nombreeRstaurante, Toast.LENGTH_SHORT).show();
+                                Toast.makeText(ListaRestaurantes.this, nombreRestaurante, Toast.LENGTH_SHORT).show();
+                                Toast.makeText(ListaRestaurantes.this, precioRestaurante, Toast.LENGTH_SHORT).show();
 
                             }
                         } else {
